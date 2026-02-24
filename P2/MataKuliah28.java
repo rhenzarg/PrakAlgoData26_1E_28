@@ -14,6 +14,7 @@ public class MataKuliah28 {
         jumlahJam28 = jam28;
     }
 
+    
     void tampilInformasi28() {
         System.out.println("Kode MK: " + kodeMK28);
         System.out.println("Nama: " + nama28);
