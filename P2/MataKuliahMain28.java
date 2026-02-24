@@ -9,7 +9,6 @@ public class MataKuliahMain28 {
         matkul1.kurangiJam28(0);
         matkul1.tampilInformasi28();
 
-        
         MataKuliah28 matkul2 = new MataKuliah28("BD", "Basis Data", 1, 5);
         matkul2.ubahSKS(2);
         matkul2.tambahJam28(0);
