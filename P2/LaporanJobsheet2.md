@@ -89,3 +89,29 @@ secara berurutan? Jelaskan alasannya!
 berparameter dari class Mahasiswa!
 - Kode Program
   <img width="1112" height="127" alt="image" src="https://github.com/user-attachments/assets/c9d1bad9-4e47-4124-b18b-b0a483b4a785" />
+
+## Tugas 1
+- Berikut kode class
+
+  <img width="895" height="734" alt="image" src="https://github.com/user-attachments/assets/78edbad1-f74d-4835-8854-966de4d314e3" />
+
+- Berikut Kode Main
+
+  <img width="1353" height="474" alt="image" src="https://github.com/user-attachments/assets/b1544f51-3549-48ca-97c2-ae1dd52589e4" />
+
+- Berikut Output Program
+
+  <img width="412" height="264" alt="image" src="https://github.com/user-attachments/assets/33c24aa1-3c09-4c32-987f-a5e20b377961" />
+
+## Tugas 2
+- Berikut Kode Class
+
+ <img width="798" height="679" alt="image" src="https://github.com/user-attachments/assets/79aedefd-0600-4f7e-b42d-350b230b8d58" />
+
+- Berikut Kode Main
+
+  <img width="1070" height="349" alt="image" src="https://github.com/user-attachments/assets/8d6f9b4a-1245-4b4b-b059-d7acbd403647" />
+
+- Berikut Output Program
+
+  <img width="285" height="214" alt="image" src="https://github.com/user-attachments/assets/bb8027cc-f873-45a2-90fa-77304d4426fd" />
