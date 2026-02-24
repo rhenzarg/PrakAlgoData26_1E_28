@@ -1,5 +1,6 @@
 package P2;
 
+
 public class DoenMain28 {
     public static void main(String[] args) {
     Dosen28 dosen1 = new Dosen28("1234567", "LG Adama Vito", true, 2015, "Matematika");
