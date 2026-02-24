@@ -37,9 +37,9 @@ public class Mahasiswa28 {
         }
     }
     
-    public Mahasiswa28() {
+     public Mahasiswa28() {
 
-    }
+     }
 
     public Mahasiswa28(String nm28, String nim28, double ipk28, String kls28) {
         nama28 = nm28;
@@ -47,4 +47,6 @@ public class Mahasiswa28 {
         this.ipk28 = ipk28;
         kelas28 = kls28;
     }
+
+    
 }
