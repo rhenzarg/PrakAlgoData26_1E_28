@@ -26,12 +26,9 @@ public class MahasiswaDemo28 {
 
         for (int i = 0; i < 3; i++) {
             System.out.println("Data Mahasiswa ke-" + (i + 1));
-            System.out.println("NIM     :" + arrayOfMahasiswa28[i].nim);
-            System.out.println("Nama    :" + arrayOfMahasiswa28[i].nama);
-            System.out.println("Kelas   :" + arrayOfMahasiswa28[i].kelas);
-            System.out.println("IPK     :" + arrayOfMahasiswa28[i].ipk);
-            System.out.println("-----------------------------------=");
+            arrayOfMahasiswa28[i].cetakInfo();
         }
-        rhenza.close();;
+        rhenza.close();
+        ;
     }
 }
