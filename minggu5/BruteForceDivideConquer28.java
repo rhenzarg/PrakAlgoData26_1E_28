@@ -19,7 +19,7 @@ public class BruteForceDivideConquer28 {
             } else {
                 int fakto = n * faktorialDC(n - 1);
                 return fakto;
-            }
+            } 
         }
 
     }
