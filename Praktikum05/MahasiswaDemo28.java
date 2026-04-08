@@ -40,6 +40,10 @@ public class MahasiswaDemo28 {
         System.out.println("\nData setelah sorting (DESC): ");
         list.tampil();
 
+        System.out.println("Data yang sudah terurut menggunakan SELECTION SORT (ASC)");
+        list.slectionSort();
+        list.tampil();
+
         rhenza.close();
     }
 }
