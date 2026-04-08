@@ -1,25 +1,45 @@
 package Praktikum05;
 
+import java.util.Scanner;
+
 public class MahasiswaDemo28 {
     public static void main(String[] args) {
-        MahasiswaBerprestasi28 list = new MahasiswaBerprestasi28();
-        Mahasiswa28 m1 = new Mahasiswa28("123", "Zidan", "2A", 3.2);
-        Mahasiswa28 m2 = new Mahasiswa28("124", "Ayu", "2A", 3.5);
-        Mahasiswa28 m3 = new Mahasiswa28("125", "Sofi", "2A", 3.1);
-        Mahasiswa28 m4 = new Mahasiswa28("126", "Sita", "2A", 3.9);
-        Mahasiswa28 m5 = new Mahasiswa28("127", "Miki", "2A", 3.7);
+        Scanner rhenza = new Scanner(System.in);
+       
+        System.out.print("Masukan jumlah mahsiswa: ");
+        int n = rhenza.nextInt();
+        rhenza.nextLine();
 
-        list.tambah(m1);
-        list.tambah(m2);
-        list.tambah(m3);
-        list.tambah(m4);
-        list.tambah(m5);
+        MahasiswaBerprestasi28 list = new MahasiswaBerprestasi28(n);
 
-        System.out.println("Data mahasiswa sebelum sorting");
+        for (int i = 0; i < n; i++) {
+            System.out.println("Masukan jumlah mahasiswa ke-" + (i+1));
+
+            System.out.print("NIM: ");
+            String nim = rhenza.nextLine();
+
+            System.out.print("Nama: ");
+            String nama = rhenza.nextLine();
+
+            System.out.print("Kelas: ");
+            String kelas = rhenza.nextLine();
+
+            System.out.print("IPK: ");
+            double ipk = rhenza.nextDouble();
+            rhenza.nextLine();
+
+            Mahasiswa28 m = new Mahasiswa28(nim, nama, kelas, ipk);
+            list.tambah(m);
+        }
+
+        System.out.println("\nData sebelum sorting: ");
         list.tampil();
 
-        System.out.println("Data Mahasiswa setelah sorting berdasarkan IPK (DESC) : ");
         list.bubbleSort();
+
+        System.out.println("\nData setelah sorting (DESC): ");
         list.tampil();
+
+        rhenza.close();
     }
 }
