@@ -1,5 +1,7 @@
 package Pertemuan12;
 
+import org.w3c.dom.Node;
+
 public class SingleLinkedList28 {
     Node28 head;
     Node28 tail;
@@ -63,12 +65,12 @@ public class SingleLinkedList28 {
     public void insertAt(int index, Mahasiswa28 input) {
         if (index < 0) {
             System.out.println("indeks salah");
-        }else if (index == 0) {
+        } else if (index == 0) {
             addFirst(input);
-        }else {
+        } else {
             Node28 temp = head;
-            for (int i = 0; i < index -1; i++) {
-                temp =temp.next;
+            for (int i = 0; i < index - 1; i++) {
+                temp = temp.next;
             }
             temp.next = new Node28(input, temp.next);
             if (temp.next.next == null) {
@@ -77,5 +79,87 @@ public class SingleLinkedList28 {
         }
     }
 
+    public void getData(int index) {
+        Node28 tmp = head;
+        for (int i = 0; i < index; i++) {
+            tmp = tmp.next;
+        }
+        tmp.data.tampilInformasi();
+        System.out.println("");
+    }
 
+    public int indexOf(String key) {
+        Node28 tmp = head;
+        int index = 0;
+        while (tmp != null && !tmp.data.nama.equalsIgnoreCase(key)) {
+            tmp = tmp.next;
+            index++;
+        }
+        if (tmp == null) {
+            return -1;
+        } else {
+            return index;
+        }
+    }
+
+    public void removeFirst() {
+        if (isEmpty()) {
+            System.out.println("Linked List masih Kosong, tidak dapat dihapus!");
+        } else if (head == tail) {
+            head = tail = null;
+        } else {
+            head = head.next;
+        }
+    }
+
+    public void removeLast() {
+        if (isEmpty()) {
+            System.out.println("Linked List masih Kosong, tidak dapat dihapus!");
+        } else if (head == tail) {
+            head = tail = null;
+        } else {
+            Node28 temp = head;
+            while (temp.next != tail) {
+                temp = temp.next;
+            }
+            temp.next = null;
+            tail = temp;
+        }
+    }
+
+    public void remove(String key) {
+        if (isEmpty()) {
+            System.out.println("Linked List masih Kosong, tidak dapat dihapus!");
+        } else {
+            Node28 temp = head;
+            while (temp != null) {
+                if ((temp.data.nama.equalsIgnoreCase(key)) && (temp == head)) {
+                    this.removeFirst();
+                    break;
+                } else if (temp.next != null && temp.next.data.nama.equalsIgnoreCase(key)) {
+                    temp.next = temp.next.next;
+                    if (temp.next == null) {
+                        tail = temp;
+                    }
+                    break;
+                }
+                temp = temp.next;
+            }
+        }
+    }
+
+    public void removeAt(int index) {
+        if (index == 0) {
+            removeFirst();
+        } else {
+            Node28 temp = head;
+            for (int i = 0; i < index - 1; i++) {
+                temp = temp.next;
+            }
+            temp.next = temp.next.next;
+            if (temp.next == null) {
+                tail = temp;
+            }
+        }
+    }
 }
