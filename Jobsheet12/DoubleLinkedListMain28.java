@@ -113,4 +113,5 @@ public class DoubleLinkedListMain28 {
         } while (pilihan != 0);
         scan.close();
     }
+    
 }

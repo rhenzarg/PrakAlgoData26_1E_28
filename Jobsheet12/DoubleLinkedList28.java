@@ -233,6 +233,7 @@ public class DoubleLinkedList28 {
         tail.data.tampil();
     }
 
+    
     public void getIndex(int index) {
         if (isEmpty() || index < 0) {
             System.out.println("Indeks tidak valid atau list kosong.");
