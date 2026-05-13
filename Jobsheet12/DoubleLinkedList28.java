@@ -34,7 +34,8 @@ public class DoubleLinkedList28 {
             tail = newNode28;
         }
     }
-    public void insertAfter(String keyNim,  Mahasiswa28 data) {
+
+    public void insertAfter(String keyNim, Mahasiswa28 data) {
         Node28 current = head;
         while (current != null && !current.data.nim.equals(keyNim)) {
             current = current.next;
@@ -57,6 +58,46 @@ public class DoubleLinkedList28 {
             current.next = newNode;
         }
         System.out.println("Data berhasil disisipkan setelah NIM " + keyNim);
+    }
+
+    public void printReverse() {
+        if (isEmpty()) {
+            System.out.println("Linked List masih kosong.");
+            return;
+        }
+        Node28 current = tail;
+        while (current != null) {
+            current.data.tampil();
+            current = current.prev;
+        }
+    }
+
+    public void removeFirst() {
+        if (isEmpty()) {
+            System.out.println("Linked List Kosong.");
+            return;
+        }
+
+        if (head == tail) {
+            head = tail = null;
+        } else {
+            head = head.next;
+            head.prev = null;
+        }
+    }
+
+    public void removeLast() {
+        if (isEmpty()) {
+            System.out.println("Linked List Kosong.");
+            return;
+        }
+
+        if (head == tail) {
+            head = tail = null;
+        } else {
+            tail = tail.prev;
+            tail.next = null;
+        }
     }
 
     public void print() {
