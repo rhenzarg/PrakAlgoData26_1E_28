@@ -2,7 +2,7 @@ package CM2;
 import java.util.Scanner;
 public class RoyalDelish28main {
     public static void main(String[] args) {
-        Scanner reza = new Scanner(System.in);
+        Scanner rhenza = new Scanner(System.in);
         AntreanDLL28 antrian = new AntreanDLL28();
         PesananDLL28 pesanan = new PesananDLL28();
 
@@ -21,15 +21,15 @@ public class RoyalDelish28main {
             System.out.println("4. Laporan Pesanan");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu : ");
-            pilihan = reza.nextInt();
-            reza.nextLine();
+            pilihan = rhenza.nextInt();
+            rhenza.nextLine();
 
             switch (pilihan) {
                 case 1:
                     System.out.print("Nama Pembeli : ");
-                    String nama = reza.nextLine();
+                    String nama = rhenza.nextLine();
                     System.out.print("No HP        : ");
-                    String hp = reza.nextLine();
+                    String hp = rhenza.nextLine();
                     antrian.tambahAntrian(nama, hp);
                     break;
 
@@ -44,13 +44,13 @@ public class RoyalDelish28main {
                     }
                     System.out.println("Pembeli berikutnya: " + antrian.head.namaPembeli);
                     System.out.print("Kode Pesanan  : ");
-                    int kode = reza.nextInt();
-                    reza.nextLine();
+                    int kode = rhenza.nextInt();
+                    rhenza.nextLine();
                     System.out.print("Nama Pesanan  : ");
-                    String namaMakanan = reza.nextLine();
+                    String namaMakanan = rhenza.nextLine();
                     System.out.print("Harga         : ");
-                    int harga = reza.nextInt();
-                    reza.nextLine();
+                    int harga = rhenza.nextInt();
+                    rhenza.nextLine();
 
                     Pembeli28 dilayani = antrian.hapusAntrian();
                     pesanan.tambahPesanan(kode, namaMakanan, harga, dilayani.namaPembeli);
@@ -70,6 +70,6 @@ public class RoyalDelish28main {
             }
         } while (pilihan != 0);
 
-        reza.close();
+        rhenza.close();
     }
 }
