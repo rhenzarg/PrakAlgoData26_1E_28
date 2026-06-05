@@ -1,4 +1,4 @@
-<img width="752" height="89" alt="image" src="https://github.com/user-attachments/assets/5410c332-76fc-4966-9b00-04c90ccee3aa" /># Laporan Praktikum Algoritma dan Struktur Data
+# Laporan Praktikum Algoritma dan Struktur Data
 
 <h4>Nama : Rhenza Rendragraha<h4>
 <h4>NIM : 254107020049<h4>
